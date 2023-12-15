@@ -1,0 +1,158 @@
+#
+# Be aware that even a small syntax error here can lead to failures in output.
+#
+
+sidebar:
+    about: False # set to False or comment line if you want to remove the "how to use?" in the sidebar
+    education: False # set to False if you want education in main section instead of in sidebar
+
+    # Profile information
+    name: "Johannes Horner"
+    tagline: "Software Engineer"
+    avatar: "johannes_horner_larsys.png"  #place a 100x100 picture inside /assets/images/ folder and provide the name of the file below
+
+    # "Sidebar links"
+    email: "***"
+    citizenship: "Österreichische Staatsbürgerschaft"
+    # website: blog.webjeda.com #do not add http://
+    # linkedin: alandoe
+    # xing: alandoe
+    github: "johanneshorner"
+    codewars: "l0zzy"
+
+    languages:
+      title: "Sprachen"
+      info:
+        - idiom: "Deutsch"
+          level: "Muttersprache"
+
+        - idiom: "Englisch"
+          level: "fließend"
+
+    interests:
+      title: "Interessen"
+      info:
+        - item: "Kraftsport"
+          link:
+
+        - item: "Open-source Software"
+          link:
+
+        - item: "Computerspiele"
+          link:
+
+# career-profile:
+#     title: "Über mich"
+#     summary: |
+#       Enthusiastischer Software Entwickler aus Oberösterreich, immer auf der Suche nach neuen Interessanten Technologien.
+
+
+experiences:
+    title: "Berufserfahrung"
+    info:
+      - role: "Software Engineer"
+        time: "seit Oktober 2017"
+        company: "LARsys-Automation GmbH"
+        details: |
+          Nach einer kurzen Kennenlernphase, in der ich meine Fähigkeiten als frischer HTL Absolvent an einem firmeninternen Buchungssystem unter Beweis stellen konnte, wurde ich bei LARsys im Anschluss an meine Bundesheerzeit, einem Projekt der Firma <a href="https://www.br-automation.com">B&R</a>, zugeteilt. Hier bestand meine Arbeit darin, ein System zu entwickeln, mit dem Sicherheitssteuerungen verwaltet werden können. Zu meinen Aufgaben zählten die Entwicklung der Systemarchitektur, das Definieren einer Build- und Entwicklungsumgebung und schlussendlich die Implementierung des Systems auf einem modifizierten VxWorks Echtzeitbetriebssystem.
+
+          Projekte:
+          - (C++) <a href="https://www.br-automation.com/de-at/produkte/software/mapp-technology/mapp-safety/">Embedded System zum Konfigurieren von B&R Safety Steuerungen</a>
+          - (C#/C++) Windows GUI zum flashen von Firmware auf Embedded Geräte
+
+      - role: "Grundwehrdiener"
+        time: "Jänner 2018 - Juli 2018"
+        company: "Bundesheer Österreich"
+
+      - role: "Produktionsmitarbeiter (Ferialjob)"
+        time: "Juli 2016 - August 2016"
+        company: "Delphi Automotive Systems Austria GmbH"
+
+projects:
+    title: "Projekte"
+    # intro: >
+    #   Lorem ipsum
+    assignments:
+      - title: LOLRCG
+        link: "https://github.com/johanneshorner/LOLRCG"
+        tagline: |
+          Ein Rust CLI Tool zum Generieren von zufälligen Champions für das Spiel League of Legends
+
+      - title: Selfhosting
+        # link: "#hook"
+        tagline: |
+          Volle Kontrolle und Entscheidungsfreiheit über meine genutzte Software zu haben, war mir schon immer wichtig. Deshalb verwende ich zu Hause einen selbst zusammengebauten, dedizierten Linux Server, auf dem ich verschiedenste Services selbst hoste. Von <a href="https://gitea.io/en-us/">Gitea</a> als Git Server bis hin zu <a href="https://jellyfin.org/">Jellyfin</a> fürs Heimkino. Diese Services laufen alle in separaten Docker Containern in virtuellen Netzwerken und werden im Heimnetzwerk über Subdomains per Reverse Proxy aufgerufen. Um die Services von außerhalb zu erreichen, verbindet man sich per VPN direkt zum Heimnetzwerk. Damit verschiebt man die Sicherheitsanforderungen von den einzelnen Services alleinig auf den VPN Service.
+
+      - title: Game Hacking
+        # link: "#"
+        tagline: |
+          Software in ihre Bestandteile zerlegen, zu verstehen und mit dem erlangten Wissen auf eine Weise zu verwenden, für die sie gar nicht vorgesehen war. Zum Beipiel mit <a href="https://hex-rays.com/ida-pro/">IDA</a> (dem Interaktiven Disassembler) Dateien vom Spiel CSGO decompilen (Binär kompilierte Daten wieder in vom Menschen lesbaren Assembler/C Code verwandeln), damit die Struktur des Programms analysieren zu können und dann den Spiel-Code so zu verändern, dass z.B. Gegner durch Wände sichtbar werden. (Natürlich nur im Einzelspielermodus oder gegen Bots. Es geht hier nur um die Entwicklung eines "Cheats" und den letztendlichen "Proof of Concept". Das Erlebnis anderer Spieler soll hierdurch nie beeinträchtigt werden)
+
+# publications:
+#     title: Publications
+#     intro: |
+#       You can list your publications in this section. Lorem ipsum dolor sit
+#       amet, consectetur adipiscing elit. Vestibulum et ligula in nunc
+#       bibendum fringilla a eu lectus.
+#     papers:
+#       - title: The Art of Computer Programming
+#         link: "#"
+#         authors: Donald E. Knuth
+#         conference: Addison-Wesley, 1968
+#
+#       - title: "Genetic Programming III: Darwinian Invention &amp; Problem Solving"
+#         link: "#"
+#         authors: Koza, J.R., Andre, D., Bennett, F.H., Keane, M.A.
+#         conference: "Morgan Kaufmann Publishers Inc., San Francisco, CA, USA, 1st edn. (1999)"
+#
+#       - title: A syntax directed compiler for Algol 60
+#         link: "#"
+#         authors: Edgar T. Irons
+#         conference: "Comm. ACM 4 (1961), 51–55"
+
+education:
+    title: "Ausbildung"
+    info:
+      - degree: "Matura"
+        university: "HTL Braunau"
+        time: "2012-2017"
+        # details: |
+        #   Describe your study here lorem ipsum dolor sit amet, consectetuer
+        #   adipiscing elit. Aenean commodo ligula eget dolor. Aenean massa. Cum
+        #   sociis natoque penatibus et magnis dis parturient montes, nascetur
+        #   ridiculus mus. Donec quam felis, ultricies nec, pellentesque eu,
+        #   pretium quis, sem.
+        #     - Bullet point
+        #     - Bullet point
+
+skills:
+    title: "Kenntnisse & Fähigkeiten"
+
+    toolset:
+      - name: "C++"
+        level: 90%
+
+      - name: "Rust"
+        level: 75%
+
+      - name: "C#"
+        level: 75%
+
+      - name: "Python"
+        level: 70%
+
+      - name: "Nix"
+        level: 50%
+
+      - name: "Git"
+        level: 90%
+    extra: |
+      Weitere Kenntnisse:
+      - Erfahrung mit Virtualisierung (Docker, Podman)
+
+      - Effizientes Arbeiten in Windows und Linux
+
+      - Vertraut mit diversen Office Programmen (Word, Excel, Powerpoint etc.)
+
+# footer: >
+#     Designed with <i class="fas fa-heart"></i> by <a href="http://themes.3rdwavemedia.com" target="_blank" rel="nofollow">Xiaoying Riley</a>
